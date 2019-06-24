@@ -1,0 +1,170 @@
+{
+  "519673297693048832": {
+    "cards": {
+      "1269bbad-025e-4fbf-859e-d7c5176adb78": {
+        "wumpus": {
+          "name": "Big wumpus",
+          "rarity": "common",
+          "flair-text": "Tough, but has a big heart",
+          "house": "Balance ",
+          "pack": "Base",
+          "[dev]-rarity": "20",
+          "[dev]-rarity-percent": "0.06289308176",
+          "[dev]-uuid": "1269bbad-025e-4fbf-859e-d7c5176adb78",
+          "[dev]-rarityflag": "0",
+          "[dev]-houseflag": "0",
+          "[dev]-packflag": "0"
+        },
+        "count": 1
+      },
+      "379a9ea1-7539-4256-9184-06cee32279f1": {
+        "wumpus": {
+          "name": "Buisness Wumpus",
+          "rarity": "common",
+          "flair-text": "Ready to work... If he had opposable thumbs.",
+          "house": "Balance ",
+          "pack": "Base",
+          "[dev]-rarity": "22",
+          "[dev]-rarity-percent": "0.06918238994",
+          "[dev]-uuid": "379a9ea1-7539-4256-9184-06cee32279f1",
+          "[dev]-rarityflag": "0",
+          "[dev]-houseflag": "0",
+          "[dev]-packflag": "0"
+        },
+        "count": 1
+      },
+      "ace57b3e-9d60-4b40-9298-cd859523abcb": {
+        "wumpus": {
+          "name": "Lonely Wumpus",
+          "rarity": "common",
+          "flair-text": "Wumpus has no one to play with",
+          "house": "Balance ",
+          "pack": "Base",
+          "[dev]-rarity": "16",
+          "[dev]-rarity-percent": "0.05031446541",
+          "[dev]-uuid": "ace57b3e-9d60-4b40-9298-cd859523abcb",
+          "[dev]-rarityflag": "0",
+          "[dev]-houseflag": "0",
+          "[dev]-packflag": "0"
+        },
+        "count": 1
+      },
+      "aa315e6c-47d2-4504-b244-e542ae18be17": {
+        "wumpus": {
+          "name": "Wumpus",
+          "rarity": "common",
+          "flair-text": "Just your regular Wumpus!",
+          "house": "Balance ",
+          "pack": "Base",
+          "[dev]-rarity": "35",
+          "[dev]-rarity-percent": "0.1100628931",
+          "[dev]-uuid": "aa315e6c-47d2-4504-b244-e542ae18be17",
+          "[dev]-rarityflag": "0",
+          "[dev]-houseflag": "0",
+          "[dev]-packflag": "0"
+        },
+        "count": 2
+      }
+    }
+  },
+  "592290780811362306": {
+    "cards": {
+      "379a9ea1-7539-4256-9184-06cee32279f1": {
+        "wumpus": {
+          "name": "Buisness Wumpus",
+          "rarity": "common",
+          "flair-text": "Ready to work... If he had opposable thumbs.",
+          "house": "Balance ",
+          "pack": "Base",
+          "[dev]-rarity": "22",
+          "[dev]-rarity-percent": "0.06918238994",
+          "[dev]-uuid": "379a9ea1-7539-4256-9184-06cee32279f1",
+          "[dev]-rarityflag": "0",
+          "[dev]-houseflag": "0",
+          "[dev]-packflag": "0"
+        },
+        "count": 1
+      },
+      "b054bea6-b20e-466e-a51d-2f539a8962fb": {
+        "wumpus": {
+          "name": "Executive Wumpus",
+          "rarity": "rare",
+          "flair-text": "Get back to work! ",
+          "house": "Brilliance ",
+          "pack": "Base",
+          "[dev]-rarity": "10",
+          "[dev]-rarity-percent": "0.03144654088",
+          "[dev]-uuid": "b054bea6-b20e-466e-a51d-2f539a8962fb",
+          "[dev]-rarityflag": "1",
+          "[dev]-houseflag": "2",
+          "[dev]-packflag": "0"
+        },
+        "count": 1
+      },
+      "21b4749c-186a-43c4-90cb-2539d4415358": {
+        "wumpus": {
+          "name": "Tall Wumpus",
+          "rarity": "common",
+          "flair-text": "What's the weather like up there, eh?",
+          "house": "Brilliance ",
+          "pack": "Base",
+          "[dev]-rarity": "18",
+          "[dev]-rarity-percent": "0.05660377358",
+          "[dev]-uuid": "21b4749c-186a-43c4-90cb-2539d4415358",
+          "[dev]-rarityflag": "0",
+          "[dev]-houseflag": "2",
+          "[dev]-packflag": "0"
+        },
+        "count": 1
+      },
+      "28ef72f0-401f-402f-873a-83deceb99ac6": {
+        "wumpus": {
+          "name": "Tiny Wumpus",
+          "rarity": "common",
+          "flair-text": "A smol boi",
+          "house": "Bravery ",
+          "pack": "Base",
+          "[dev]-rarity": "16",
+          "[dev]-rarity-percent": "0.05031446541",
+          "[dev]-uuid": "28ef72f0-401f-402f-873a-83deceb99ac6",
+          "[dev]-rarityflag": "0",
+          "[dev]-houseflag": "1",
+          "[dev]-packflag": "0"
+        },
+        "count": 1
+      },
+      "5c7b920c-d69f-42ce-8c8b-d57ac41edc52": {
+        "wumpus": {
+          "name": "Purple Wumpus",
+          "rarity": "common",
+          "flair-text": "He's purple, that's it",
+          "house": "Bravery ",
+          "pack": "Base",
+          "[dev]-rarity": "32",
+          "[dev]-rarity-percent": "0.1006289308",
+          "[dev]-uuid": "5c7b920c-d69f-42ce-8c8b-d57ac41edc52",
+          "[dev]-rarityflag": "0",
+          "[dev]-houseflag": "1",
+          "[dev]-packflag": "0"
+        },
+        "count": 1
+      },
+      "aa315e6c-47d2-4504-b244-e542ae18be17": {
+        "wumpus": {
+          "name": "Wumpus",
+          "rarity": "common",
+          "flair-text": "Just your regular Wumpus!",
+          "house": "Balance ",
+          "pack": "Base",
+          "[dev]-rarity": "35",
+          "[dev]-rarity-percent": "0.1100628931",
+          "[dev]-uuid": "aa315e6c-47d2-4504-b244-e542ae18be17",
+          "[dev]-rarityflag": "0",
+          "[dev]-houseflag": "0",
+          "[dev]-packflag": "0"
+        },
+        "count": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "ping": "ping.js",
+  "throwerror": "throwError.js",
+  "getwumpus": "getWumpus.js",
+  "library": "library.js",
+  "forcelibraryaddcard": "forcelibraryaddcard.js"
+}

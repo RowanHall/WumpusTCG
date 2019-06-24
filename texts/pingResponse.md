@@ -1,0 +1,1 @@
+It took the server **`${pingms} milliseconds`** to receive and process your request.
