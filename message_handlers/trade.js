@@ -54,8 +54,56 @@ module.exports = (msg, commandarray, resolve, reject) => {
       
       /* preform trade stuff */
       
-      console.log(c)
+      var wumpuses = JSON.parse(fs.readFileSync("./wumpuses.json", 'utf-8'))
+      var discoveredwumpus = null;
+      // check if wumpus *exists*
+      Object.keys(wumpuses).forEach(WUMPUUID => {
+        var wumpus = wumpuses[WUMPUUID]
+        if(wumpus.name.toLowerCase() == c.item) {
+          discoveredwumpus = WUMPUUID
+        }
+      })
+      if(discoveredwumpus == null) {
+        reject("No wumpus found by the name of: " + c.item)
+      }
       
+      //check if they have the card, and the amount they have.
+      var libraries = JSON.parse(fs.readFileSync("./libraries.json", 'utf-8'))
+      if(!libraries[c.initiator]) {
+        libraries[c.initiator] = {
+          "cards": {}
+        };
+      }
+      var hasCard = false;
+      var hasAmountOfCard = false;
+      Object.keys(libraries[c.initiator].cards).forEach(cardKey => {
+        var wumpus = libraries[c.initiator].cards[cardKey].wumpus
+        var count  = libraries[c.initiator].cards[cardKey].count
+        
+        if(wumpus['name'].toLowerCase() == c.item) {
+          var hasCard = true;
+          if(count >= c.amount) {
+            hasAmountOfCard = true;
+            
+            // go through with trade.
+            
+            if(!libraries[c.to]) {
+              libraries[c.to] = {
+                "cards": {}
+              };
+            }
+            if(libraries[c.to].cards[wumpus['[dev]-uuid']]) {
+              libraries[c.to].cards[wumpus['[dev]-uuid']].count = libraries[c.to].cards[wumpus['[dev]-uuid']].count + c.amount;
+            } else {
+              libraries[c.to].cards[wumpus['[dev]-uuid']] = {}
+              libraries[c.to].cards[wumpus['[dev]-uuid']].wumpus = wumpus;
+              libraries[c.to].cards[wumpus['[dev]-uuid']].count  = c.amount
+            }
+            libraries[c.initiator].cards[cardKey].count = libraries[c.initiator].cards[cardKey].count - c.amount
+          }
+        }
+      })
+      fs.writeFileSync("./libraries.json", JSON.stringify(libraries, null, 2))
     } else {
       reject("You're not in a trade right now!")
     }
