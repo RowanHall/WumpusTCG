@@ -3,5 +3,6 @@
   "throwerror": "throwError.js",
   "getwumpus": "getWumpus.js",
   "library": "library.js",
-  "forcelibraryaddcard": "forcelibraryaddcard.js"
+  "forcelibraryaddcard": "forcelibraryaddcard.js",
+  "trade": "trade.js"
 }
