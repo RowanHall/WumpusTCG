@@ -49,7 +49,13 @@ module.exports = (msg, commandarray, resolve, reject) => {
       }
     })
     if(tradeUUID != null) {
-      delete trades[uuid]
+      var c = trades[tradeUUID]
+      delete trades[tradeUUID]
+      
+      /* preform trade stuff */
+      
+      console.log(c)
+      
     } else {
       reject("You're not in a trade right now!")
     }
