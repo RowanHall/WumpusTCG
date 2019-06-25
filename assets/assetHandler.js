@@ -5,12 +5,14 @@ var wumpuses = JSON.parse(fs.readFileSync("./wumpuses.json", 'utf-8'))
 const app = express()
 const port = 8102
 
-app.get('/', (req, res) => res.send('Hello World!'))
+app.get('/', (req, res) => {
+  res.send(fs.readFileSync("./home.html", 'utf-8'))
+})
 
 var mapobj = {}
 
 fs.readdirSync('./assets/').forEach(i => {
-  if(i != "assetHandler.js" && i != "curiousOne.html" && i != "Error.png") {
+  if(i != "assetHandler.js" && i != "home.html" && i != "Error.png") {
     var uuid = uuidv4();
     var wumpusUUID = ""
     Object.keys(wumpuses).forEach(wumpuuid => {
