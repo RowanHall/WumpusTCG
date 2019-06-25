@@ -5,6 +5,7 @@ module.exports = (msg, commandarray, resolve, reject) => {
     var prefixes = JSON.parse(fs.readFileSync("./prefixes.JSON", 'utf-8'))
     prefixes[msg.guild.id] = commandarray.join(" ")
     msg.channel.send(`Changed the prefix to: \`${commandarray.join(" ")}\``)
+    fs.writeFileSync("./prefixes.JSON", JSON.stringify(prefixes, null, 2))
   } else {
     reject("You do not have the \"ADMINISTRATOR\" permission")
   }
