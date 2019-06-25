@@ -19,8 +19,8 @@ var randomize = (float) => {
 }
 
 client.on('message', msg => {
-  //
-  if(msg.guild && msg.author.id != client.user.id) {
+  if(msg.author.id == client.user.id) return
+  if(msg.guild) {
     if(msg.author.id != client.user.id && randomize(0.02)) {
       var wumpuses = JSON.parse(fs.readFileSync("./wumpuses.json", 'utf-8'))
       var donatedWumpus = false;
