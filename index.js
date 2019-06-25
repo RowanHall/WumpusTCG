@@ -53,7 +53,7 @@ client.on('message', msg => {
           }
         })
         var embed = {
-          "title": wumpuses[UUID]['flair-text'],
+          "title": "*" + wumpuses[UUID]['flair-text'] + "*",
           "description": "Wumpus info:",
           "color": 9168048,
           "timestamp": "2019-06-23T18:33:20.030Z",

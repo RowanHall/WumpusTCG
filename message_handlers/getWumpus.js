@@ -46,7 +46,7 @@ module.exports = (msg, commandarray, resolve, reject, assetHandler) => {
         }
       })
       var embed = {
-        "title": wumpus['flair-text'],
+        "title": "*" + wumpus['flair-text'] + "*",
         "description": "Wumpus info:",
         "color": 9168048,
         "timestamp": "2019-06-23T18:33:20.030Z",
