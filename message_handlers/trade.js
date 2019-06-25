@@ -79,7 +79,7 @@ module.exports = (msg, commandarray, resolve, reject) => {
       Object.keys(libraries[c.initiator].cards).forEach(cardKey => {
         var wumpus = libraries[c.initiator].cards[cardKey].wumpus
         var count  = libraries[c.initiator].cards[cardKey].count
-        console.log(wumpus['name'].toLowerCase(), c.item)
+        console.log(wumpus['name'].toLowerCase(), c.item, wumpus['name'].toLowerCase() == c.item)
         if(wumpus['name'].toLowerCase() == c.item) {
           var hasCard = true;
           if(count >= c.amount) {
