@@ -15,7 +15,7 @@ module.exports = (msg, commandarray, resolve, reject) => {
   var trades = JSON.parse(fs.readFileSync("./ongoingtrades.json", 'utf-8'))
   if(tradecommand == "new") {
     var uuid = uuidv4()
-    var to = message.mentions.members.first()
+    var to = msg.mentions.members.first()
     var userraw = commandarray.shift()
     var amount = parseInt(commandarray.shift())
     var item = commandarray.join(" ")
