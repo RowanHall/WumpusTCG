@@ -19,68 +19,69 @@ var randomize = (float) => {
 }
 
 client.on('message', msg => {
-  if(msg.author.id != client.user.id && randomize(0.02)) {
-    var wumpuses = JSON.parse(fs.readFileSync("./wumpuses.json", 'utf-8'))
-    var donatedWumpus = false;
-    Object.keys(wumpuses).forEach((UUID) => {
-      if(randomize(parseFloat(wumpuses[UUID]['[dev]-rarity-percent'])) && !donatedWumpus) {
-        donatedWumpus = true;
-        var libraries = JSON.parse(fs.readFileSync("./libraries.json", 'utf-8'))
-        if(!libraries[msg.author.id]) {
-          libraries[msg.author.id] = {
-            "cards": {}
-          };
-        }
-        if(libraries[msg.author.id].cards[UUID]) {
-          libraries[msg.author.id].cards[UUID].count++;
-        } else {
-          libraries[msg.author.id].cards[UUID] = {}
-          libraries[msg.author.id].cards[UUID].wumpus = wumpuses[UUID];
-          libraries[msg.author.id].cards[UUID].count  = 1
-        }
-        fs.writeFileSync("./libraries.json", JSON.stringify(libraries, null, 2))
-        var fields = [];
-        Object.keys(wumpuses[UUID]).forEach(key => {
-          if([
-            'flair-text',
-            'name'
-          ].indexOf(key) == -1 && key.split("-")[0] != "[dev]") {
-            fields.push({
-              "name": capitalize(key),
-              "value": capitalize(wumpuses[UUID][key]),
-              "inline": true
-            })
+  if(msg.guild) {
+    if(msg.author.id != client.user.id && randomize(0.02)) {
+      var wumpuses = JSON.parse(fs.readFileSync("./wumpuses.json", 'utf-8'))
+      var donatedWumpus = false;
+      Object.keys(wumpuses).forEach((UUID) => {
+        if(randomize(parseFloat(wumpuses[UUID]['[dev]-rarity-percent'])) && !donatedWumpus) {
+          donatedWumpus = true;
+          var libraries = JSON.parse(fs.readFileSync("./libraries.json", 'utf-8'))
+          if(!libraries[msg.author.id]) {
+            libraries[msg.author.id] = {
+              "cards": {}
+            };
           }
-        })
-        var embed = {
-          "title": "*" + wumpuses[UUID]['flair-text'] + "*",
-          "description": "Wumpus info:",
-          "color": 9168048,
-          "timestamp": "2019-06-23T18:33:20.030Z",
-          "footer": {
-            "text": "Wumpus Discovered"
-          },
-          "thumbnail": {
-            "url": assetHandler(UUID)
-          },
-          "author": {
-            "name": "Congrats! You found a wumpus! : " + wumpuses[UUID]['name']
-          },
-          "fields": fields
-        };
-        msg.channel.send({ embed });
-      }
-    })
-  }
-  
-  
-  try {
-    var splitElement = getPrefix(msg.guild.id)
-  } catch(err) {
-    var splitElement = "--"
-  }
-  var x = msg.content.split(splitElement)
-  if(x.length > 1 && x[0] == "") { //check that the prefix is in the message, and is the first part of the message
+          if(libraries[msg.author.id].cards[UUID]) {
+            libraries[msg.author.id].cards[UUID].count++;
+          } else {
+            libraries[msg.author.id].cards[UUID] = {}
+            libraries[msg.author.id].cards[UUID].wumpus = wumpuses[UUID];
+            libraries[msg.author.id].cards[UUID].count  = 1
+          }
+          fs.writeFileSync("./libraries.json", JSON.stringify(libraries, null, 2))
+          var fields = [];
+          Object.keys(wumpuses[UUID]).forEach(key => {
+            if([
+              'flair-text',
+              'name'
+            ].indexOf(key) == -1 && key.split("-")[0] != "[dev]") {
+              fields.push({
+                "name": capitalize(key),
+                "value": capitalize(wumpuses[UUID][key]),
+                "inline": true
+              })
+            }
+          })
+          var embed = {
+            "title": "*" + wumpuses[UUID]['flair-text'] + "*",
+            "description": "Wumpus info:",
+            "color": 9168048,
+            "timestamp": "2019-06-23T18:33:20.030Z",
+            "footer": {
+              "text": "Wumpus Discovered"
+            },
+            "thumbnail": {
+              "url": assetHandler(UUID)
+            },
+            "author": {
+              "name": "Congrats! You found a wumpus! : " + wumpuses[UUID]['name']
+            },
+            "fields": fields
+          };
+          msg.channel.send({ embed });
+        }
+      })
+    }
+    
+    
+    try {
+      var splitElement = getPrefix(msg.guild.id)
+    } catch(err) {
+      var splitElement = "--"
+    }
+    var x = msg.content.split(splitElement)
+    if(x.length > 1 && x[0] == "") { //check that the prefix is in the message, and is the first part of the message
     x.shift()
     execute(msg, x.join(splitElement).toLowerCase().split(" ")).then(() => {
       //finished executing command
@@ -88,6 +89,9 @@ client.on('message', msg => {
       log(msg, "ERROR: " + err)
       msg.channel.send(fs.readFileSync("./texts/error.md", 'utf-8').split("${err}").join(err))
     })
+  }
+  } else {
+    msg.channel.send("This bot doesn't work in DMs. Sorry!")
   }
 });
 
