@@ -16,7 +16,6 @@ module.exports = (msg, commandarray, resolve, reject) => {
   if(tradecommand == "new") {
     var uuid = uuidv4()
     var to = msg.mentions.members.first()
-    console.log(to, to.id)
     var userraw = commandarray.shift()
     var amount = parseInt(commandarray.shift())
     var item = commandarray.join(" ")
@@ -45,8 +44,7 @@ module.exports = (msg, commandarray, resolve, reject) => {
   if(tradecommand == "accept") {
     var tradeUUID = null
     Object.keys(trades).forEach(uuid => {
-      console.log(trades[uuid][to], msg.author.id)
-      if(trades[uuid][to] == msg.author.id) {
+      if(trades[uuid]['to'] == msg.author.id) {
         tradeUUID = uuid
       }
     })
