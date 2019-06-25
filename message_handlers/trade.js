@@ -36,7 +36,7 @@ module.exports = (msg, commandarray, resolve, reject) => {
           msg.channel.send("Trade Expired.")
         }
         fs.writeFileSync("./ongoingtrades.json", JSON.stringify(trades,null,4))
-      })
+      }, 10000)
     } else {
       reject("Missing element. Proper syntax:\n  " + getPrefix(msg.guild.id) + "trade new [@user] [amount] [card name]")
     }
