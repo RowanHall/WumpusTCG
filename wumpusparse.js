@@ -8,13 +8,15 @@ var key = tsvarr.shift().split("\t")
 var retobj = {}
 tsvarr.forEach(val => {
   var data = (val.split("\t"))
-  retobj[data[8]] = {}
-  key.forEach((key, index) => {
-    if(!retobj[data[8]]) {
-      retobj[data[8]] = {}
-    }
-    retobj[data[8]][key.toLowerCase().split(" ").join("-")] = data[index]
-  })
+  if(data[8]) {
+    retobj[data[8]] = {}
+    key.forEach((key, index) => {
+      if(!retobj[data[8]]) {
+        retobj[data[8]] = {}
+      }
+      retobj[data[8]][key.toLowerCase().split(" ").join("-")] = data[index]
+    })
+  }
 })
 
 fs.writeFileSync("wumpuses.json", JSON.stringify(retobj, null, 2))

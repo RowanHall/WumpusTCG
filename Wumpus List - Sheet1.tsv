@@ -1,34 +1,55 @@
 Name	Rarity	Flair Text	House	Pack	[DEV] CDN-URL	[DEV] Rarity	[DEV] Rarity Percent	[DEV] UUID	[DEV] RarityFlag	[DEV] HouseFlag	[Dev] packFlag
-Crimson Wumpus	rare	It just works	Balance 	Base		4	0.008733624454	73bc8c54-4acb-4028-a10f-7ef90189d6ae	2	0	0
-Iron Wumpus	rare	and I'm Iron Wumpus.	Balance 	Base		2	0.004366812227	076ba921-8f6a-4f13-a33c-6b545dfe151a	2	0	0
-Nitro Wumpus	uncommon	Thanks for the boost!	Balance 	Base		7	0.01528384279	f4a55358-6af1-4cc4-9a88-46e70740a817	1	0	0
-Big wumpus	common	Tough, but has a big heart	Balance 	Base		20	0.04366812227	1269bbad-025e-4fbf-859e-d7c5176adb78	0	0	0
-Business Wumpus	common	Ready to work... If he had opposable thumbs.	Balance 	Base		22	0.0480349345	379a9ea1-7539-4256-9184-06cee32279f1	0	0	0
-Lonely Wumpus	common	Wumpus has no one to play with	Balance 	Base		16	0.03493449782	ace57b3e-9d60-4b40-9298-cd859523abcb	0	0	0
-Wumpus	common	Just your regular Wumpus!	Balance 	Base	wumpus_base.png	35	0.07641921397	aa315e6c-47d2-4504-b244-e542ae18be17	0	0	0
-Sad wumpus	common	Just seeing their sad face... Aw..	Balance 	Base		16	0.03493449782	955ce79d-b3d9-4258-b857-662c4bfd025f	0	0	0
-Agent W	rare	Angent W? over. Agent WWWWWWWWWW!	Bravery 	Base		5	0.01091703057	7cd28995-4667-42bc-9de8-9dacc6364d6b	2	1	0
-Female wumpus	uncommon	One of the last of it's kind, how are wumpi born?	Bravery 	Base		8	0.01746724891	814452d0-e312-4a80-82c9-1542df4f9e45	1	1	0
-Gamer Wumpus	uncommon	Minecraft good, Fortnite bad	Bravery 	Base		10	0.02183406114	fb48e41e-8555-4087-90db-b8664b7aaac7	1	1	0
-Dad Wumpus 	common	Does it really take that long to get cigarettes?	Bravery 	Base		20	0.04366812227	46c0c3b7-61cf-4090-89d8-ab6014ad31a1	0	1	0
-New York Wumpus	common	Heyyy, I'm walkin here!	Bravery 	Base		18	0.03930131004	c5b55893-3f04-4fa4-b4e8-2ff1dbffc7b9	0	1	0
-Tiny Wumpus	uncommon	A smol boi	Bravery 	Base		16	0.03493449782	28ef72f0-401f-402f-873a-83deceb99ac6	0	1	0
-Golden Wumpus	legendary	*Shiny.....*	Brilliance 	Base	wumpus_gold.png	1	0.002183406114	dc7482f1-df84-4b79-9304-aa1a717e7bda	3	2	0
-Silver Wumpus	rare		Balance 	Base	wumpus_silver.png	6	0.01310043668	3755b0fd-e2d0-4a07-be45-e963badbc2fe	2	0	0
-Bronze Wumpus	uncommon		Brilliance 	Base	wumpus_bronze.png	10	0.02183406114	0785f740-7ab2-4d27-bf75-e97ee49c2dd7	1	2	0
-Executive Wumpus	uncommon	Get back to work! 	Brilliance 	Base		10	0.02183406114	b054bea6-b20e-466e-a51d-2f539a8962fb	1	2	0
-Flock of Wumpuses	uncommon	Watch the Wumpi graze	Brilliance 	Base		12	0.02620087336	7886018b-d895-46d2-bbaf-cc5211042c60	1	2	0
-Beach Wumpus	common	How does he do it? No tan either....	Brilliance 	Base		21	0.04585152838	d99473a8-ba81-48b3-9f6f-5e036ede566f	0	2	0
-Hacker Wumpus	uncommon	01000001010101011110101110000101	Brilliance 	Base		24	0.05240174672	d44c46fb-a77a-4a87-bc4b-d90f6cabc43c	0	2	0
-Tall Wumpus	uncommon	How's the weather like up there, eh?	Brilliance 	Base		18	0.05240174672	21b4749c-186a-43c4-90cb-2539d4415358	0	2	0
-Purple Wumpus	common	He's purple, that's it	Bravery 	Base		32	0.06986899563	5c7b920c-d69f-42ce-8c8b-d57ac41edc52	0	1	0
-Dev Wumpus	legendary	Jesus christ ***That function wasn't even used anywhere!***	Brilliance	Base		1	0.002183406114	7b8105b2-c9f6-402f-b711-44ba06ad0bcd	3	2	0
-Stick Wumpus	common			Base		22	0.0480349345	93d7686f-a4f1-4325-b951-82d2fe25d921	0		0
-Medic Wumpus	uncommon	Justice rains from above!	Bravery	Base		14	0.03056768559	19663841-e1ed-493a-845b-3e48dc8b72e5	1	1	0
-Green/Yellow Hat Wumpus	common			Base	wumpus_green_yellow_hat.png	24	0.05240174672	a5c7c9a9-acc4-4f11-93ec-de63b12dc75f	0		0
-Pink Hat Wumpus	common			Base	wumpus_pink_hat.png	19	0.04148471616	cd8f7e49-82ec-427e-a7c2-c45b0a4a0566	0		0
-Blue Hat Wumpus	common			Base	wumpus_blue_hat.png	21	0.04585152838	375ee0b3-e240-49f8-b842-62cd6c105029	0		0
-Party Wumpus	uncommon			Base		24	0.05240174672	ca9befe5-94e1-47e4-b742-634acfbbd9ac	1		0
+Agent W	epic	Angent W? over. Agent WWWWWWWWWW!	Bravery 	Base	wumpus_agent.png	5	#REF!	7cd28995-4667-42bc-9de8-9dacc6364d6b	2	1	0
+Alien Wumpus	rare	For Aiur!	Bravery	Base	wumpus_alien.png						
+Artist Wumpus	common	Voilà!	Brilliance	Base	wumpus_artist.png						
+Baby Wumpus	common	Waaaaah!!	Balance	Base	wumpus_baby						
+Beach Wumpus	common	How does he do it? No tan either....	Brilliance 	Base		21	#REF!	d99473a8-ba81-48b3-9f6f-5e036ede566f	0	2	0
+Big wumpus	common	Tough, but has a big heart	Balance 	Base	wumpus_big.png	20	0.06920415225	1269bbad-025e-4fbf-859e-d7c5176adb78	0	0	0
+Blue Hat Wumpus	common			Base	wumpus_blue_hat.png	21	#REF!	375ee0b3-e240-49f8-b842-62cd6c105029	0		0
+Bronze Wumpus	rare		Brilliance 	Base	wumpus_bronze.png	10	#REF!	0785f740-7ab2-4d27-bf75-e97ee49c2dd7	1	2	0
+Business Wumpus	common	Ready to work... If he had opposable thumbs.	Balance 	Base	wumpus_business.png	22	0.07142857143	379a9ea1-7539-4256-9184-06cee32279f1	0	0	0
+Cat Wumpus	common	mew	Balance	Base	wumpus_cat.png						
+Crimson Wumpus	epic	It just works	Balance 	Base		4	0.01492537313	73bc8c54-4acb-4028-a10f-7ef90189d6ae	2	0	0
+Dad Wumpus 	rare	Does it really take that long to get cigarettes?	Bravery 	Base		20	0.07407407407	46c0c3b7-61cf-4090-89d8-ab6014ad31a1	0	1	0
+Dev Wumpus	legendary	Jesus christ ***That function wasn't even used anywhere!***	Brilliance	Base		1	#REF!	7b8105b2-c9f6-402f-b711-44ba06ad0bcd	3	2	0
+Doctor Wumpus	common	NURSE!	Brilliance	Base							
+Dog Wumpus	common	Ruf!	Bravery	Base							
+Emo Wumpus	common	It's not a phase mom!	Balance	Base							
+Executive Wumpus	rare	Get back to work! 	Brilliance 	Base		10	0.03802281369	b054bea6-b20e-466e-a51d-2f539a8962fb	1	2	0
+Female wumpus	common	One of the last of it's kind, how are wumpi born?	Bravery 	Base		8	0.0275862069	814452d0-e312-4a80-82c9-1542df4f9e45	1	1	0
+Flock of Wumpuses	rare	Watch the Wumpi graze	Brilliance 	Base		12	0.04444444444	7886018b-d895-46d2-bbaf-cc5211042c60	1	2	0
+Gamer Wumpus	rare	Minecraft good, Fortnite bad	Bravery 	Base		10	0.03731343284	fb48e41e-8555-4087-90db-b8664b7aaac7	1	1	0
+Golden Wumpus	legendary	*Shiny.....*	Brilliance 	Base	wumpus_gold.png	1	0.003174603175	dc7482f1-df84-4b79-9304-aa1a717e7bda	3	2	0
+Green/Yellow Hat Wumpus	common			Base	wumpus_green_yellow_hat.png	24	#REF!	a5c7c9a9-acc4-4f11-93ec-de63b12dc75f	0		0
+Hacker Wumpus	common	01000001010101011110101110000101	Brilliance 	Base		24	0.0830449827	d44c46fb-a77a-4a87-bc4b-d90f6cabc43c	0	2	0
+Iron Wumpus	epic	and I'm Iron Wumpus.	Balance 	Base		2	0.007168458781	076ba921-8f6a-4f13-a33c-6b545dfe151a	2	0	0
+Lonely Wumpus	common	Wumpus has no one to play with	Balance 	Base		16	0.05263157895	ace57b3e-9d60-4b40-9298-cd859523abcb	0	0	0
+Medic Wumpus	rare	Justice rains from above!	Bravery	Base		14	0.05185185185	19663841-e1ed-493a-845b-3e48dc8b72e5	1	1	0
+Monsieur Wumpus 	common	A quite sophisticated Wumpus	Brilliance	Base							
+Mythic Wumpus	mythic			Base							
+New York Wumpus	common	Heyyy, I'm walkin here!	Bravery 	Base		18	0.0602006689	c5b55893-3f04-4fa4-b4e8-2ff1dbffc7b9	0	1	0
+Nitro Wumpus	rare	Thanks for the boost!	Balance 	Base		7	0.02564102564	f4a55358-6af1-4cc4-9a88-46e70740a817	1	0	0
+Old wumpus	common	My time has come	Brilliance	Base							
+Party Wumpus	rare	*party time!!*	Balance	Base	wumpus_party.png	24	0.0830449827	ca9befe5-94e1-47e4-b742-634acfbbd9ac	1		0
+Pink Hat Wumpus	common			Base	wumpus_pink_hat.png	19	0.05956112853	cd8f7e49-82ec-427e-a7c2-c45b0a4a0566	0		0
+Pirate Wumpus	rare	Arrr!	Bravery	Base	wumpus_pirate.png						
+Purple Wumpus	common	He's purple, that's it	Bravery 	Base		32	0.1126760563	5c7b920c-d69f-42ce-8c8b-d57ac41edc52	0	1	0
+Sad wumpus	common	Just seeing their sad face... Aw..	Balance 	Base		16	0.05653710247	955ce79d-b3d9-4258-b857-662c4bfd025f	0	0	0
+Shadow Wumpus	rare	I am one with the shadows	Balance	Base							
+Silver Wumpus	epic		Balance 	Base	wumpus_silver.png	6	0.02150537634	3755b0fd-e2d0-4a07-be45-e963badbc2fe	2	0	0
+Sir Wumpus	rare	My knight in shining armor	Bravery	Base							
+Space Wumpus	rare	That's one small step for Wumpus, and one giant leap for Wumpus kind	Brilliance	Base							
+Stick Wumpus	common		Balance 	Base		22	0.07357859532	93d7686f-a4f1-4325-b951-82d2fe25d921	0		0
+Tall Wumpus	common	How's the weather like up there, eh?	Brilliance 	Base		18	0.07482993197	21b4749c-186a-43c4-90cb-2539d4415358	0	2	0
+Teacher Wumpus	common	Good morning class.	Brilliance	Base							
+Tiny Wumpus	common	A smol boi	Bravery 	Base		16	0.05970149254	28ef72f0-401f-402f-873a-83deceb99ac6	0	1	0
+Winged Wumpus	epic	Majestic indeed	Balance	Base							
+Wumpachu	epic	So cute!	Bravery	Base							
+Wumpus	common	Just your regular Wumpus!	Balance 	Base	wumpus_base.png	35	0.2046783626	aa315e6c-47d2-4504-b244-e542ae18be17	0	0	0
+Blocked Wumpus	rare	You can't unblock the Wumpus.		Base							
+	rare			Base							
+	legendary			Base							
+											
 Gay Pride Wumpus	N/A	⚣ - Part of the Pride Pack~!	N/A	Pride		10	0.125	c1fda3e6-c099-41be-a43f-01050054c19f	-1	-1	1
 Asexual Pride Wumpus	N/A	⚯ - Part of the Pride Pack~!	N/A	Pride		10	0.125	b1b985d3-a9af-4ccd-955c-7d4812b393f2	-1	-1	1
 Bisexual Pride Wumpus	N/A	⚥ - Part of the Pride Pack~!	N/A	Pride		10	0.125	757fe13b-9254-4545-a47b-ce4cbea45daf	-1	-1	1

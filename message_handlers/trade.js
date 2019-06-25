@@ -16,24 +16,46 @@ module.exports = (msg, commandarray, resolve, reject) => {
   if(tradecommand == "new") {
     var uuid = uuidv4()
     var to = message.mentions.members.first()
-    if(to) {
+    var userraw = commandarray.shift()
+    var amount = parseInt(commandarray.shift())
+    var item = commandarray.join(" ")
+    if(to && userraw && amount && item) {
       trades[uuid] = {
         "initiator": msg.author.id,
-        "to": to,
-        "started": Date.now()
+        "to": to.id,
+        "started": Date.now(),
+        "userraw": userraw,
+        "amount": amount,
+        "item": item
       }
       msg.channel.send("Trade Started! The other user has 10 seconds to respond with `" + getPrefix(msg.guild.id) + "trade accept` or else the trade will be automatically rejected.")
       setTimeout(() => {
-        
+        var trades = JSON.parse(fs.readFileSync("./ongoingtrades.json", 'utf-8'))
+        if(trades[uuid]) {
+          delete trades[uuid]
+          msg.channel.send("Trade Expired.")
+        }
+        fs.writeFileSync("./ongoingtrades.json", JSON.stringify(trades,null,4))
       })
     } else {
-      reject("You must mention a user to trade with them!")
+      reject("Missing element. Proper syntax:\n  " + getPrefix(msg.guild.id) + "trade new [@user] [amount] [card name]")
     }
   }
   if(tradecommand == "accept") {
-    
+    var tradeUUID = null
+    Object.keys(trades).forEach(uuid => {
+      if(trades[uuid][to] == msg.author.id) {
+        tradeUUID = uuid
+      }
+    })
+    if(tradeUUID != null) {
+      delete trades[uuid]
+    } else {
+      reject("You're not in a trade right now!")
+    }
   }
   if(tradecommand == "reject") {
     
   }
+  fs.writeFileSync("./ongoingtrades.json", JSON.stringify(trades,null,4))
 }
