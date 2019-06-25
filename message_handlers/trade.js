@@ -103,6 +103,15 @@ module.exports = (msg, commandarray, resolve, reject) => {
           }
         }
       })
+      if(!hasCard) {
+        reject("you don't have the card '" + c.item + "'")
+      } else {
+        if(!hasAmountOfCard) {
+          reject("you don't have enough of the card '" + c.item + "'")
+        } else {
+          msg.channel.send("Trade Finished.")
+        }
+      }
       fs.writeFileSync("./libraries.json", JSON.stringify(libraries, null, 2))
     } else {
       reject("You're not in a trade right now!")
