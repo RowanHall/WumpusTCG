@@ -81,7 +81,7 @@ module.exports = (msg, commandarray, resolve, reject) => {
         var count  = libraries[c.initiator].cards[cardKey].count
         console.log(wumpus['name'].toLowerCase(), c.item, wumpus['name'].toLowerCase() == c.item)
         if(wumpus['name'].toLowerCase() == c.item) {
-          var hasCard = true;
+          hasCard = true;
           if(count >= c.amount) {
             hasAmountOfCard = true;
             
