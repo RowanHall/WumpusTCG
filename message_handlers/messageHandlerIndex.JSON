@@ -2,5 +2,6 @@
   "ping": "ping.js",
   "getwumpus": "getWumpus.js",
   "library": "library.js",
-  "trade": "trade.js"
+  "trade": "trade.js",
+  "changeprefix": "changeprefix.js"
 }
